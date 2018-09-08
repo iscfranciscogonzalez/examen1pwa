@@ -1,0 +1,43 @@
+Tecnologico Nacional de Mexico Instituto Tecnologico Tijuana Subdireccion Academica
+Departamento de Sistemas y Computacion
+Ing. Sistemas Computacionales Programacion WEB
+
+Profesor: Ray Brunett Parra Galaviz
+Alumno: Gonzalez Bustamante Jose Francisco	Matricula: 13210696
+
+I.	Instrucciones: Leer detalladamente los reactivos y responder de manera correcta lo solicitado en los reactivos
+
+1.	Dibuje un arbol con la estructura basica de un proyecto y una aplicación de Django
+•	sitio/
+       manage.py
+       sitio/
+              __init__.py
+              settings.py
+              urls.py
+              wsgi.py
+•	app/
+     __init__.py
+     admin.py
+     apps.py
+     models.py
+     tests.py
+     views.py
+2.	Mencione tres argumentos que gestiona el comando manage.py
+•	startapp
+•	makemigration
+•	runserver
+3.	Explique la diferencia de utilizar urls global y urls local
+4.	Escriba un patron de url para una vista basada en función
+•	path(‘vista/’, views.Vista.as_view(), name=’Vista’)
+5.	Escriba un patron de url para una vista basada en clase
+•	path(‘vista_clase/<tipoDato:Valor>/’, views.Vista.as_view(), name=‘vista’)
+6.	Escriba el comando para hacer un proyecto en Django
+•	django-admin startproject 'proyecto'
+7.	Escriba el comando para hacer una aplicación en Django
+•	python manage.py startapp 'app'
+8.	Mencione para que sirve el archivo Settings.py
+•	Este archivo contiene la información de todas las instaladas aplicaciones, url estatica, configuración en general
+9.	Escriba el comando para registrar las migraciones de los modelos
+•	python manage.py makemigration
+10.	Escriba el comando para sincronizar el modelo con el motor de base de datos.
+•	python manage.py migrate
